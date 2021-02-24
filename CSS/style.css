@@ -38,15 +38,15 @@
     padding: 0 15px;
     margin: 0 auto;}
 
-
-
-
-
-
     img{
         display: block;
     }
-/*header*/
+
+
+
+    /*header*/
+
+
 
 .header-nav, .nav-list, .contacts-list, .nav{
 display: flex;
@@ -92,11 +92,12 @@ list-style: none;
 .header{border-bottom: 1px solid rgba(236, 236, 236, 1);}
 
 
+
+
 .text{
     padding-top: 24px;
     padding-bottom: 25px;
 }
-
 
 
 .text{
@@ -143,13 +144,100 @@ a.menu-link{
 
 /*HERO*/
 
+
     .section1 {
     background-color:rgba(47, 48, 58, 1) ;
     padding: 200px 0;
 
-   
-   
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)
+    ),url('../IMG/header.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+
 }
+
+
+.list-icon{
+    display: flex;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background-color:rgba(245, 244, 250, 1);
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 25px 102px;
+}
+
+.icon{
+    width: 65.32px;
+    height: 70px;
+}
+
+
+    .Clients{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+ .clients-list{
+        display: flex;
+        margin: 50px -15px 0;
+        flex-wrap: wrap;
+        padding: 0px;
+       
+    }
+
+
+    .clients-list li{
+        
+    display: flex;
+    border: 1px solid rgba(175, 177, 184, 1);
+    border-radius: 4px;
+    height: 90px;
+    width: 170px;
+    margin: 0px 15px;
+    justify-content: center;
+}
+.clients-list li:hover{
+    border-color:rgba(33, 150, 243, 1);
+}
+
+    .list-logos{
+        padding: 22px 63px;
+    }
+
+    .list-logos a{
+        fill:rgba(175, 177, 184, 1);
+
+    }
+    .list-logos a:hover{
+     fill:rgba(33, 150, 243, 1);
+    }
+
+  .footer-social{
+      display: flex;
+      justify-content: space-between;
+      margin-left: 50px;
+
+  }
+  .footer-social p{
+      margin: 0px;
+      font-size: 14px;
+      font-weight: 700;
+      font-family:'Roboto', sans-serif;
+      color:rgba(255, 255, 255, 1);
+      
+
+      
+  }
+
 .titlemain{
     text-align: center;
     margin: 0 auto;
@@ -396,9 +484,7 @@ align-items: center;
      margin-bottom: 9px;
      
  }
- .logo{
-     
- }
+ 
  
  
 footer{
