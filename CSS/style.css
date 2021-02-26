@@ -16,7 +16,8 @@
             
             --background: rgba(47, 48, 58, 1);
             
-            
+            --background-icon: rgba(255, 255, 255, 0.1);
+
             }
 
 
@@ -36,7 +37,8 @@
 .container{
     width: 1200px;
     padding: 0 15px;
-    margin: 0 auto;}
+    margin: 0 auto;
+}
 
     img{
         display: block;
@@ -196,47 +198,170 @@ a.menu-link{
 
 
     .clients-list li{
-        
+        height: 90px; 
+        width: 170px;
     display: flex;
-    border: 1px solid rgba(175, 177, 184, 1);
+    
     border-radius: 4px;
     height: 90px;
     width: 170px;
     margin: 0px 15px;
     justify-content: center;
 }
-.clients-list li:hover{
-    border-color:rgba(33, 150, 243, 1);
+.clients-list a:hover{
+    color: var(--blue-text);
+    border-color: var(--blue-text);
 }
 
-    .list-logos{
-        padding: 22px 63px;
-    }
+.clients-list a:focus{
+    color: var(--blue-text);
+    border-color: var(--blue-text);}
 
-    .list-logos a{
-        fill:rgba(175, 177, 184, 1);
 
-    }
-    .list-logos a:hover{
-     fill:rgba(33, 150, 243, 1);
-    }
+.clients-list a{
+    color: rgba(175, 177, 184, 1);
+    display: flex;
+    border: 1px solid rgba(175, 177, 184, 1);
+    border-radius: 4px;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.clients-list svg{
+    fill: currentColor;
+}
+.container-icon{
+    display: flex;
+}
 
-  .footer-social{
-      display: flex;
-      justify-content: space-between;
-      margin-left: 50px;
 
-  }
-  .footer-social p{
-      margin: 0px;
-      font-size: 14px;
-      font-weight: 700;
-      font-family:'Roboto', sans-serif;
-      color:rgba(255, 255, 255, 1);
-      
+/*Иконки для футера*/
 
-      
-  }
+
+.social{
+    width: 206px;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    margin-left: 70px;
+}
+
+
+.social p{
+    display: inline-block;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16,4px;
+    text-transform: uppercase;
+    color: var(--white-text);
+}
+.textsocial{
+    
+    display: block;
+    margin: 0px;
+}
+.social-list{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.social-item {
+    margin: 0px;
+    padding: 0px;
+}
+
+.social-icon{
+   fill: var(--white-text);
+    
+    
+}
+
+.social-list-comand{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 30px;
+    margin-left: 32px;
+    margin-right: 32px;
+    justify-content: center;
+    text-align: center;
+
+    
+    
+
+}
+.social-icon-comand{
+    width: 206px;
+    height: 20px;
+    display: flex;
+    margin-top: 16px;
+    margin-bottom: 30px;
+    margin: 0px;
+    padding: 0px;
+    padding-right: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.social-link-comand{
+    margin: 0px;
+    padding: 0px;
+   display: flex;
+   width: 44px;
+   height: 44px;
+   fill:rgba(175, 177, 184, 1);
+
+   justify-content: center;
+   align-items: center;
+   
+
+ 
+
+}
+.social-link-comand:hover{
+    fill: var(--white-text);
+    background-color: var(--blue-text);
+    border-radius: 50%;
+}
+.social-item-comand{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.social-link{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.social-link:hover{
+    background-color: var(--blue-text);
+}
+.social-link:focus{
+    background-color: var(--blue-text);
+}
+
+.icon-mail{
+    fill:currentColor;
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+    
+}
+
+
+
+
 
 .titlemain{
     text-align: center;
@@ -360,7 +485,7 @@ margin-bottom: 0px;}
 
     }
 
-    .comand li{
+    .comand .workers{
         box-shadow:  0px 2px 1px 0px rgba(0, 0, 0, 0.2), 
         0px 1px 1px 0px rgba(0, 0, 0, 0.14),
          0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -370,7 +495,7 @@ background-color: rgba(255, 255, 255, 1);
 ;
        
     }
-    .comand li:not(:last-child){
+    .comand .workers:not(:last-child){
         margin-right: 30px;
     }
     .human{
