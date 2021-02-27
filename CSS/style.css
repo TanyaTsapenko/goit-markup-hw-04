@@ -18,6 +18,9 @@
             
             --background-icon: rgba(255, 255, 255, 0.1);
 
+            --main-gradient:rgba(47, 48, 58, 0.4);
+            --client-list:rgba(175, 177, 184, 1);
+            --border:rgba(238, 238, 238, 1);
 
 
             }
@@ -126,8 +129,6 @@ a.menu-link{
     line-height: 16px;
     letter-spacing: 0.02em;}
 
-   .menu-link:hover, .menu-link:focus, .menu-link:active{color:rgba(33, 150, 243, 1) ;}
- .menu-link.current{color:rgba(33, 150, 243, 1);
    .menu-link:hover, .menu-link:focus, .menu-link:active{color:var(--blue-text) ;}
  .menu-link.current{color:var(--blue-text);
     
@@ -144,7 +145,7 @@ a.menu-link{
     letter-spacing: 0.02em;
 }
 .email:hover {color:var(--blue-text) ;}
-
+.email:focus {color:var(--blue-text) ;}
 
 
 
@@ -223,6 +224,7 @@ a.menu-link{
 
 
 .clients-list a{
+    color: var(--client-list);
     display: flex;
     border: 1px solid var(--client-list);
     border-radius: 4px;
@@ -299,14 +301,8 @@ a.menu-link{
 
 }
 .social-icon-comand{
+    width: 20px;
     height: 20px;
-    display: flex;
-    margin-top: 16px;
-    margin-bottom: 30px;
-    margin: 0px;
-    padding: 0px;
-    padding-right: 10px;
-    justify-content: space-evenly;
     
 }
 .social-link-comand{
@@ -329,6 +325,12 @@ a.menu-link{
     background-color: var(--blue-text);
     border-radius: 50%;
 }
+.social-link-comand:focus{
+    fill: var(--white-text);
+    background-color: var(--blue-text);
+    border-radius: 50%;}
+
+
 .social-item-comand{
     margin: 0px;
     padding: 0px;
@@ -337,6 +339,7 @@ a.menu-link{
 
 
 .social-link{
+    background-color: var(--background-icon);
     border-radius: 50%;
     width: 44px;
     height: 44px;
