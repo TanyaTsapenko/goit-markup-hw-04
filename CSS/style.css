@@ -18,6 +18,8 @@
             
             --background-icon: rgba(255, 255, 255, 0.1);
 
+
+
             }
 
 
@@ -25,7 +27,7 @@
 
 
 .header{
-    background-color:rgba(255, 255, 255, 1) ;}
+    background-color:var(--white-text) ;}
 
 .font{
     font-family:  'Roboto', sans-serif; 
@@ -104,7 +106,7 @@ list-style: none;
 
 .text{
     font-family:'Raleway', sans-serif; 
-    color:rgba(33, 33, 33, 1) ;
+    color:var(--black-text) ;
     font-weight: 700;
     font-size: 26px;
     line-height: 31px;
@@ -113,11 +115,11 @@ list-style: none;
 
     
     .webtext{
-        color:rgba(33, 150, 243, 1) ;
+        color:var(--blue-text) ;
     }
 
 a.menu-link{
-    color: rgba(33, 33, 33, 1);
+    color: var(--black-text);
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
@@ -126,12 +128,14 @@ a.menu-link{
 
    .menu-link:hover, .menu-link:focus, .menu-link:active{color:rgba(33, 150, 243, 1) ;}
  .menu-link.current{color:rgba(33, 150, 243, 1);
+   .menu-link:hover, .menu-link:focus, .menu-link:active{color:var(--blue-text) ;}
+ .menu-link.current{color:var(--blue-text);
     
     font-size: 14px;
     text-decoration: none;}
 
 .email{
-    color: rgba(117, 117, 117, 1);
+    color: var(--gray-text);
     text-decoration: none;
     font-style: normal;
     font-weight: 500;
@@ -139,7 +143,7 @@ a.menu-link{
     line-height: 16px;
     letter-spacing: 0.02em;
 }
-.email:hover {color:rgba(33, 150, 243, 1) ;}
+.email:hover {color:var(--blue-text) ;}
 
 
 
@@ -148,10 +152,10 @@ a.menu-link{
 
 
     .section1 {
-    background-color:rgba(47, 48, 58, 1) ;
+    background-color:var(--background) ;
     padding: 200px 0;
 
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)
+    background-image: linear-gradient(to right, var(--main-gradient),var(--main-gradient)
     ),url('../IMG/header.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -171,7 +175,7 @@ a.menu-link{
     width: 270px;
     height: 120px;
     border-radius: 4px;
-    background-color:rgba(245, 244, 250, 1);
+    background-color:var(--booton);
     margin-bottom: 30px;
     text-align: center;
     padding: 25px 102px;
@@ -219,9 +223,8 @@ a.menu-link{
 
 
 .clients-list a{
-    color: rgba(175, 177, 184, 1);
     display: flex;
-    border: 1px solid rgba(175, 177, 184, 1);
+    border: 1px solid var(--client-list);
     border-radius: 4px;
     height: 100%;
     width: 100%;
@@ -296,7 +299,6 @@ a.menu-link{
 
 }
 .social-icon-comand{
-    width: 206px;
     height: 20px;
     display: flex;
     margin-top: 16px;
@@ -305,7 +307,7 @@ a.menu-link{
     padding: 0px;
     padding-right: 10px;
     justify-content: space-evenly;
-    align-items: center;
+    
 }
 .social-link-comand{
     margin: 0px;
@@ -313,7 +315,7 @@ a.menu-link{
    display: flex;
    width: 44px;
    height: 44px;
-   fill:rgba(175, 177, 184, 1);
+   fill:var(--client-list);
 
    justify-content: center;
    align-items: center;
@@ -335,7 +337,6 @@ a.menu-link{
 
 
 .social-link{
-    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     width: 44px;
     height: 44px;
@@ -437,7 +438,7 @@ a.menu-link{
 
 
 .bottons_hero{
-    color:rgba(255, 255, 255, 1);
+    color:var( --white-text);
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -445,13 +446,13 @@ a.menu-link{
     height: 50px;
     line-height: 30px;
     letter-spacing: 0.06em; 
-    background-color: rgba(33, 150, 243, 1);
+    background-color: var(--blue-text);
 }
 
 
 
 .titlemain{
-    color: rgba(255, 255, 255, 1);
+    color: var(--white-text);
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
@@ -491,7 +492,7 @@ margin-bottom: 0px;}
          0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     border-radius: 3px;
     max-width: 270px;
-background-color: rgba(255, 255, 255, 1);
+background-color: var( --white-text);
 ;
        
     }
@@ -510,7 +511,7 @@ background-color: rgba(255, 255, 255, 1);
     }
 
     .item{
-        border: 1px solid rgba(238, 238, 238, 1);
+        border: 1px solid var(--border);
     }
     .work{
         margin: 0px;
@@ -525,7 +526,7 @@ background-color: rgba(255, 255, 255, 1);
 
 
 .box{
-    color:rgba(33, 33, 33, 1) ;
+    color:var( --black-text) ;
     font-weight: bold;
     font-size: 14px;
     line-height: 16px;
@@ -534,7 +535,7 @@ background-color: rgba(255, 255, 255, 1);
 }
 
 .p1{
-color: rgba(117, 117, 117, 1);
+color: var(--gray-text);
 font-weight: normal;
 font-size: 14px;
 line-height: 24px;
@@ -542,7 +543,7 @@ letter-spacing: 0.03em;
 }
 
     .tittleimg{
-color: rgba(33, 33, 33, 1);
+color: var( --black-text);
 font-weight: 700;
 font-size: 36px;
 line-height: 42.19px;
@@ -555,7 +556,7 @@ align-items: center;
 }
 
 .textcomand{ 
-    color: rgba(33, 33, 33, 1);
+    color: var(--black-text);
     font-weight: 700;
     font-size: 36px;
     line-height: 42.19px;
@@ -565,7 +566,7 @@ align-items: center;
 }
 
 .human{
-    color: rgba(33, 33, 33, 1);
+    color: var(--black-text);
     font-weight: 500;
     font-size: 16px;
     line-height: 18.75px;
@@ -573,7 +574,7 @@ align-items: center;
     align-items: center;
 }
 .profession{
-    color:rgba(117, 117, 117, 1);
+    color:var(--gray-text);
     font-weight: 400;
     font-size: 16px;
     line-height: 18.75px;
@@ -613,7 +614,7 @@ align-items: center;
  
  
 footer{
-    background-color: rgba(47, 48, 58, 1);
+    background-color: var(--footer);
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -629,7 +630,7 @@ footer{
 }
 
     .adress{
-        color: white;
+        color: var(--white-text);
         font-weight: 400;
         font-style: normal;
         font-size: 14px;
@@ -689,8 +690,16 @@ margin-bottom: 0px;
     margin-bottom:0;
 }
     
+.flex-container li:hover{
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
 
-
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
+    
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12),
+    
+    
+    
+}
 
 
 
@@ -699,23 +708,23 @@ margin-bottom: 0px;
 
     .btn{
         font-family: 'Roboto', sans-serif; 
-        color: rgba(33, 33, 33, 1);
-        background-color: rgba(245, 244, 250, 1);
+        color: var(--black-text);
+        background-color: var(--booton);
         font-weight: 500;
         font-size: 16px;
         line-height: 26px;
         letter-spacing: 0.03em; 
         align-items: center; 
     }
-    .btn:hover, .btn:focus {background-color:rgba(33, 150, 243, 1) ;
-        color:rgba(255, 255, 255, 1);}
+    .btn:hover, .btn:focus {background-color:var(--blue-text) ;
+        color:var(--white-text);}
     
 
 
 
     .work{
         
-        color: rgba(33, 33, 33, 1);
+        color: var(--black-text);
         font-weight: 700;
         font-size: 18px;
         line-height: 36px;
@@ -725,7 +734,7 @@ margin-bottom: 0px;
     
     .web{
          
-        color: rgba(117, 117, 117, 1);
+        color: var(--gray-text);
         font-weight: 400;
         font-size: 16px;
         line-height: 30px;
