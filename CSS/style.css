@@ -676,6 +676,25 @@ footer{
     margin-right: 0px;
 }
 
+.btns-list .btn:hover{
+    box-shadow: box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
+    
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+    ;
+
+}
+.btns-list .btn:focus{
+    box-shadow: box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
+    
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+    ;
+
+}
+
 .flex-container{
     display: flex;
     flex-wrap: wrap;
