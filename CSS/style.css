@@ -89,8 +89,11 @@ padding: 0px;
 list-style: none;
 }
 .contacts-list a{
+    display: flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
+
 }
 
 .contacts-list li:last-child{
@@ -147,6 +150,13 @@ a.menu-link{
 .email:hover {color:var(--blue-text) ;}
 .email:focus {color:var(--blue-text) ;}
 
+.email li:first-child{
+    margin: 0 auto;
+    margin-bottom: 9px;
+    
+}
+
+
 
 
 /*HERO*/
@@ -178,8 +188,8 @@ a.menu-link{
     border-radius: 4px;
     background-color:var(--booton);
     margin-bottom: 30px;
-    text-align: center;
-    padding: 25px 102px;
+    justify-content: center;
+    align-items: center;
 }
 
 .icon{
