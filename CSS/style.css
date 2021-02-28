@@ -292,6 +292,9 @@ a.menu-link{
     padding: 0px;
     margin-right: 10px;
 }
+.social-item:last-child{
+    margin-right: 0px;
+}
 
 .social-icon{
    fill: var(--white-text);
@@ -303,8 +306,6 @@ a.menu-link{
     display: flex;
     margin: 0px;
     padding: 0px;
-    margin-left: 32px;
-    margin-right: 32px;
     justify-content: center;
     text-align: center;
     margin-top: 16px;
@@ -618,10 +619,7 @@ align-items: center;
      margin-bottom: 9px;
      
  }
- .email{
-     margin: 0 auto;
-     padding-left: 0px;
- }
+ 
  .email li:first-child{
      margin: 0 auto;
      margin-bottom: 9px;
